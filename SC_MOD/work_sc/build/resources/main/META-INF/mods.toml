@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All-Rights-Reserved"
+
+[[mods]]
+modId="craftmate"
+version="1.0"
+displayName="CraftMate"
+displayURL="https://www.fiverr.com/loiohh"
+authors="loioh"
+description='''add chat AI to your localWorld (made for @lawlaces [fiverr.com] )'''
+[[dependencies.craftmate]]
+   modId="forge"
+   mandatory=true
+   versionRange="[47,)"
+   ordering="NONE"
+   side="CLIENT"
+[[dependencies.craftmate]]
+   modId="minecraft"
+   mandatory=true
+   versionRange="[1.20.1,1.21)"
+   ordering="NONE"
+   side="CLIENT"
