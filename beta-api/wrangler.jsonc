@@ -1,0 +1,71 @@
+{
+  "name": "beta-api",
+  "main": "src/worker.js",
+  "workers_dev": true,
+  "preview_urls": false,
+  "compatibility_date": "2026-01-10",
+  "observability": {
+    "enabled": false,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": false,
+      "persist": true,
+      "head_sampling_rate": 1
+    }
+  },
+  "vars": {
+    "ACTIVITY_BURST_SCORE": "30",
+    "AMBIENT_CHANCE": "0",
+    "AUTO_BIND_PLAYER_ID": "true",
+    "AUTO_BLOCK": "true",
+    "BETA_MODE": "true",
+    "BURST_MODE_SEC": "30",
+    "BURST_SPEAK_EVERY_SEC": "10",
+    "CM_HMAC_MAX_SKEW_SEC": "60",
+    "CONCURRENCY_WINDOW_SEC": "90",
+    "DAILY_HARD_CAP": "0",
+    "DEV_MODE": "1",
+    "ELEVENLABS_VOICE_ID": "uNQ9EAPs1FNdcaVdHj09",
+    "ENFORCE_CONCURRENCY": "true",
+    "EVENT_MIN_INTERVAL_SEC": "35",
+    "FOCUS_STREAK_TICKS": "12",
+    "GPT_ENABLED": "1",
+    "MAX_STRIKES": "3",
+    "OPENAI_MODEL": "gpt-4o-mini",
+    "SCENE_LOCK_TTL_SEC": "2",
+    "SPEAK_COOLDOWN_SEC": "90",
+    "VISION_DEBUG": "1",
+    "VISION_MODEL": "@cf/llava-hf/llava-1.5-7b-hf",
+    "VISION_SPEAK": "1",
+    "VOICE_VARIANTS": "3"
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "CM_DO",
+        "class_name": "CM_DO"
+      }
+    ]
+  },
+  "kv_namespaces": [
+    {
+      "id": "728acf03ef00480b9ef5a4df2b50f176",
+      "binding": "CM_KV"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "CM_R2",
+      "bucket_name": "craftmate-audio"
+    }
+  ]
+}
