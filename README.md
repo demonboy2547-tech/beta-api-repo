@@ -1,8 +1,8 @@
 # CraftMate Backend + Mod (Codex‑ready Monorepo)
 
 ## Structure
-- /backend – Cloudflare Worker code
-- /mod – Minecraft client mod source
+- /beta-api – Cloudflare Worker code
+- /SC_MOD – Minecraft client mod source
 - /docs – Architecture, API contracts, phases, environment config
 
 ## System Overview
